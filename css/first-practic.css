@@ -1,0 +1,203 @@
+*{
+    font-family: Nunito, Arial;
+    font-weight: 600;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+margin: 0;
+background-color: rgb(247, 250, 255);
+
+}
+
+header{
+    background-color: #A16856;
+    font-size: 1.3rem;
+    text-align: center;
+   
+    
+}
+
+.header-h{
+    color: white;
+    text-wrap: nowrap;
+    margin: 0;
+    padding: 2rem;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #E0A370;
+    z-index: 100;
+    
+    
+
+}
+nav a{
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 2rem;
+    border: 0.2rem solid rgb(187, 187, 187);
+    border-radius: 2%;
+    background-image: url(../images/pattern1.jpg);
+    background-size: cover;
+    position: relative;
+    
+}
+
+.headline-box{
+    background-color: grey;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #739fa0;
+    background-size: 50%;
+    border-radius: 3%;
+}
+
+.headline{
+    color: rgb(255, 255, 255);
+    /* padding: 0.4rem 1rem; */
+    font-size: 2.2rem;
+    font-weight: 600;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,1.5); */
+}
+
+.discription{
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: #e0a270c9;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-radius: 3px;
+}
+
+
+figure p{
+    margin: 0;
+}
+
+
+
+
+figure img{
+    
+    border-radius: 50%;
+    border: 0.3rem solid rgb(200, 200, 200);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+    height: auto;
+    margin-top: 3.5rem;
+    
+}
+
+figure figcaption{
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    color: rgb(45, 45, 45);
+}
+
+
+footer{
+    display: flex;
+    background-color: #A16856;
+    justify-content: center;
+    color: white;
+    border-top: 1rem solid  #E0A370;
+    
+}
+footer p{
+    margin: 0;
+    padding: 1rem;
+    
+}
+
+@media screen and (max-width:1500px) and (min-width:736px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        flex: auto;
+        justify-content:space-evenly;
+        
+    }
+
+    figure{
+        min-width: 9.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        
+
+        
+    }
+
+    figure img{
+    
+        width: 6rem;
+        margin-top: 1rem;
+        margin-bottom:0;
+        
+    }
+
+    .headline{
+        font-size: 1rem;
+        text-wrap: nowrap;
+    
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    figure figcaption{
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: rgb(45, 45, 45);
+    }
+
+    footer{
+        margin-top: auto;
+    
+    }
+    
+    .discription{
+        font-size: 50%;
+    }
+}
+
+
+
